@@ -1,12 +1,14 @@
-import UserItem from './user-item'
 import './user-list.css'
+
+import UserItem from './user-item'
+import Card from '../../shared/components/card'
 
 export default function UserList({ items }) {
    if (items.length === 0) {
       return (
-         <div className='center'>
+         <Card className='center'>
             <h2>No users found.</h2>
-         </div>
+         </Card>
       )
    }
 
