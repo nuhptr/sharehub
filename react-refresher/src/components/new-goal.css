@@ -1,0 +1,23 @@
+.new-goal {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.new-goal input {
+    border: 1px solid #ccc;
+    font: inherit;
+    padding: 0.25rem 0.5rem;
+    width: 20rem;
+}
+
+.new-goal button {
+    background-color: #40005d;
+    border: 1px solid #40005d;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    padding: 0.5rem 1rem;
+}
