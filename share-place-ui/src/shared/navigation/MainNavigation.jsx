@@ -1,4 +1,4 @@
-import './main-navigation.css'
+import './MainNavigation.css'
 
 export default function MainNavigation() {
    return <div>MainNavigation</div>

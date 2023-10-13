@@ -1,7 +1,7 @@
-import './user-list.css'
+import './UserList.css'
 
-import UserItem from './user-item'
-import Card from '../../shared/components/card'
+import UserItem from './UserItem'
+import Card from '../../shared/components/Cards'
 
 export default function UserList({ items }) {
    if (items.length === 0) {

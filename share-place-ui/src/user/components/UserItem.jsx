@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 
 import './user-item.css'
 
-import Avatar from '../../shared/components/avatar'
-import Card from '../../shared/components/card'
+import Avatar from '../../shared/components/Avatars'
+import Card from '../../shared/components/Cards'
 
 export default function UserItem({ id, image, name, placeCount }) {
    return (

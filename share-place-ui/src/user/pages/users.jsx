@@ -1,4 +1,4 @@
-import UserList from '../components/user-list'
+import UserList from '../components/UserList'
 
 export default function Users() {
    const USERS = [
