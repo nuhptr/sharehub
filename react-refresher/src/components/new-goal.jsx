@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useState } from "react"
 
-import './new-goal.css'
+import "./new-goal.css"
 
 export default function NewGoal({ onAddGoal }) {
-   const [enteredValue, setEnteredValue] = useState('')
+   const [enteredValue, setEnteredValue] = useState("")
 
    const addGoalHandler = (event) => {
       event.preventDefault()
@@ -12,7 +12,7 @@ export default function NewGoal({ onAddGoal }) {
       console.log(newGoal)
 
       onAddGoal(newGoal)
-      setEnteredValue('')
+      setEnteredValue("")
    }
 
    const textChangeHandler = (event) => {
@@ -20,9 +20,9 @@ export default function NewGoal({ onAddGoal }) {
    }
 
    return (
-      <form className='new-goal' onSubmit={addGoalHandler}>
-         <input type='text' value={enteredValue} onChange={textChangeHandler} />
-         <button type='submit'>Add Goal</button>
+      <form className="new-goal" onSubmit={addGoalHandler}>
+         <input type="text" value={enteredValue} onChange={textChangeHandler} />
+         <button type="submit">Add Goal</button>
       </form>
    )
 }
