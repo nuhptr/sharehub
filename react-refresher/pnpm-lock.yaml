@@ -5583,8 +5583,8 @@ packages:
       terser: 5.25.0
     dev: false
 
-  /html-webpack-plugin@5.5.3(webpack@5.89.0):
-    resolution: {integrity: sha512-6YrDKTuqaP/TquFH7h4srYWsZx+x6k6+FbsTm0ziCwGHDP78Unr1r9F/H4+sGmMbX08GQcJ+K64x55b+7VM/jg==}
+  /html-webpack-plugin@5.5.4(webpack@5.89.0):
+    resolution: {integrity: sha512-3wNSaVVxdxcu0jd4FpQFoICdqgxs4zIQQvj+2yQKFfBOnLETQ6X5CDWdeasuGlSsooFlMkEioWDTqBv1wvw5Iw==}
     engines: {node: '>=10.13.0'}
     peerDependencies:
       webpack: ^5.20.0
@@ -8559,7 +8559,7 @@ packages:
       eslint-webpack-plugin: 3.2.0(eslint@8.55.0)(webpack@5.89.0)
       file-loader: 6.2.0(webpack@5.89.0)
       fs-extra: 10.1.0
-      html-webpack-plugin: 5.5.3(webpack@5.89.0)
+      html-webpack-plugin: 5.5.4(webpack@5.89.0)
       identity-obj-proxy: 3.0.0
       jest: 27.5.1
       jest-resolve: 27.5.1
