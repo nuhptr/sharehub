@@ -4,6 +4,7 @@ Create a place sharing app using the MERN stack (MongoDB, Express, React, Node.j
 
 ![images](https://github.com/nuhptr/mern-share-place/assets/50306963/85740533-070f-475d-bb09-fdf504dd6d60)
 
-## Important Notes
+## Content of the course
 
--  [x]
+-  [x](./react-refresher/) React refresher
+-  [x](./sharehub/) Sharehub frontend
