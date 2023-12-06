@@ -1,8 +1,7 @@
-# React + Vite
+# Sharehub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple web application that allows users to share location with each other. It is built using the react framework.
 
-Currently, two official plugins are available:
+## Dependencies
 
--  [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--  [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-  [React Router Dom](https://reactrouter.com/web/guides/quick-start) - pnpm add react-router-dom
