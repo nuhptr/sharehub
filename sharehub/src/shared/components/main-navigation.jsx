@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 import "./main-navigation.css"
 import MainHeader from "./main-header"
+import Navlinks from "./navlinks"
 
 export default function MainNavigation() {
    return (
@@ -14,7 +15,9 @@ export default function MainNavigation() {
          <h1 className="main-navigation__title">
             <Link to="/">YourPlaces</Link>
          </h1>
-         <nav>...</nav>
+         <nav className="main-navigation__header-nav">
+            <Navlinks />
+         </nav>
       </MainHeader>
    )
 }
