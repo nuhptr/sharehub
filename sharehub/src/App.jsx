@@ -2,15 +2,37 @@ import { RouterProvider, Navigate, createBrowserRouter } from "react-router-dom"
 
 import Users from "./user/pages/users"
 import NewPlaces from "./places/pages/new-places"
+import MainNavigation from "./shared/components/main-navigation"
 
 const router = createBrowserRouter([
-   { path: "/", element: <Users />, exact: true },
-   { path: "places/new", element: <NewPlaces /> },
+   {
+      path: "/",
+      exact: true,
+      element: (
+         <>
+            <MainNavigation />
+            <Users />
+         </>
+      ),
+   },
+   {
+      path: "places/new",
+      element: (
+         <>
+            <MainNavigation />
+            <NewPlaces />
+         </>
+      ),
+   },
 
    // Redirects
-   { path: "*", element: <Navigate to={"/"} /> },
+   { path: "*", element: <Navigate to="/" /> },
 ])
 
 export default function App() {
-   return <RouterProvider router={router} />
+   return (
+      <main>
+         <RouterProvider router={router} />
+      </main>
+   )
 }
