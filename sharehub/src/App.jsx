@@ -1,4 +1,3 @@
-import React from "react"
 import { RouterProvider, Navigate, createBrowserRouter } from "react-router-dom"
 
 import Users from "./user/pages/users"
