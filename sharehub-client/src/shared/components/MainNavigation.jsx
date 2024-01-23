@@ -11,23 +11,21 @@ import Backdrop from "./Backdrop"
 export default function MainNavigation() {
    const [drawerIsOpen, setDrawerIsOpen] = useState(false)
 
-   const openDrawer = () => setDrawerIsOpen(true)
+   const openDrawerHandler = () => setDrawerIsOpen(true)
 
-   const closeDrawer = () => setDrawerIsOpen(false)
+   const closeDrawerHandler = () => setDrawerIsOpen(false)
 
    return (
       <React.Fragment>
-         {drawerIsOpen && <Backdrop onClick={closeDrawer} />}
-         {drawerIsOpen && (
-            <SideDrawer>
-               <nav className="main-navigation__drawer-nav">
-                  <NavLinks />
-               </nav>
-            </SideDrawer>
-         )}
+         {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
+         <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+            <nav className="main-navigation__drawer-nav">
+               <NavLinks />
+            </nav>
+         </SideDrawer>
 
          <MainHeader>
-            <button className="main-navigation__menu-btn" onClick={openDrawer}>
+            <button className="main-navigation__menu-btn" onClick={openDrawerHandler}>
                {/* Navigation Hamburger */}
                <span />
                <span />

@@ -12,7 +12,7 @@ export default function App() {
          <main>
             <Routes>
                <Route path="/" element={<Users />} exact />
-               <Route path="/places/new" element={<NewPlace />} exact />
+               <Route path="/places/new" element={<NewPlace />} />
                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
          </main>
