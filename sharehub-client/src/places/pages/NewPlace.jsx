@@ -1,7 +1,5 @@
 import React from "react"
 
-const NewPlace = () => {
+export default function NewPlace() {
    return <div>NewPlace</div>
 }
-
-export default NewPlace

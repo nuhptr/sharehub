@@ -4,8 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Users from "./user/pages/Users"
 import NewPlace from "./places/pages/NewPlace"
 
-// React.createElement('h1', {title: 'This Works'}, 'Hi, this is ReactJS')
-const App = () => {
+export default function App() {
    return (
       <BrowserRouter future={{ v7_startTransition: true }}>
          <Routes>
@@ -16,5 +15,3 @@ const App = () => {
       </BrowserRouter>
    )
 }
-
-export default App
