@@ -3,6 +3,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Build a share place app with React, Node.js, Express & MongoDB.
 
+## Dependencies
+
+### `React Router Dom`
+
+npm install --save react-router-dom - to use routing in react
+
+### `React Transition Group`
+
+npm install --save react-transition-group - to use animations in react
+
 ## Available Scripts
 
 In the project directory, you can run:
