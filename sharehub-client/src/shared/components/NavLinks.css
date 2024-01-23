@@ -9,8 +9,16 @@
     justify-content: center;
     align-items: center;
 
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
     & li {
         margin: 1rem;
+
+        @media (min-width: 768px) {
+            margin: 0 0.5rem;
+        }
     }
 
     & a {
@@ -18,6 +26,11 @@
         color: #292929;
         text-decoration: none;
         padding: 0.5rem;
+
+        @media (min-width: 768px) {
+            color: white;
+            text-decoration: none;
+        }
 
         &:hover,
         &:active,
@@ -36,41 +49,25 @@
         padding: 0.5rem;
         font: inherit;
 
+        @media (min-width: 768px) {
+            border: 1px solid white;
+            color: white;
+            background: transparent;
+        }
+
         &:hover,
         &:active {
             background: #292929;
             color: white;
+
+            @media (min-width: 768px) {
+                background: #f8df00;
+                color: #292929;
+            }
         }
 
         &:focus {
             outline: none;
         }
-    }
-}
-
-@media (min-width: 768px) {
-    .nav-links {
-        flex-direction: row;
-    }
-
-    .nav-links li {
-        margin: 0 0.5rem;
-    }
-
-    .nav-links a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .nav-links button {
-        border: 1px solid white;
-        color: white;
-        background: transparent;
-    }
-
-    .nav-links button:hover,
-    .nav-links button:active {
-        background: #f8df00;
-        color: #292929;
     }
 }
