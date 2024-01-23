@@ -1,6 +1,6 @@
 import "./goal-list.css"
 
-export default function GoalList({ goals }) {
+const GoalList = ({ goals }) => {
    return (
       <ul className="goal-list">
          {goals.map((goal) => (
@@ -9,3 +9,5 @@ export default function GoalList({ goals }) {
       </ul>
    )
 }
+
+export default GoalList
