@@ -1,11 +1,11 @@
 import { useState } from "react"
 
+import "./App.css"
+
 import { GoalList } from "./components/goal-list"
 import NewGoal from "./components/new-goal"
 
-import "./App.css"
-
-const App = () => {
+export default function App() {
    const [courseGoals, setCourseGoals] = useState([
       { id: "cg1", text: "Finish the course" },
       { id: "cg2", text: "Learn all about the course main topic" },
@@ -24,5 +24,3 @@ const App = () => {
       </div>
    )
 }
-
-export default App

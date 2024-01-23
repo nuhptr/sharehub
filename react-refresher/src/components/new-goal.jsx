@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import "./new-goal.css"
 
-const NewGoal = ({ onAddGoal }) => {
+export default function NewGoal({ onAddGoal }) {
    const [enteredValue, setEnteredValue] = useState("")
 
    const addGoalHandler = (event) => {
@@ -26,5 +26,3 @@ const NewGoal = ({ onAddGoal }) => {
       </form>
    )
 }
-
-export default NewGoal
