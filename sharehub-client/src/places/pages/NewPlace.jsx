@@ -1,5 +1,5 @@
 import React from "react"
 
 export default function NewPlace() {
-   return <div>NewPlace</div>
+   return <div>New Place Working</div>
 }
