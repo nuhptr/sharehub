@@ -53,15 +53,10 @@
         font-size: 0.9rem;
         letter-spacing: -0.2px;
         margin: 0.7rem;
-        background-color: #f8df00;
-        border: none;
         padding: 1rem;
-        border-radius: 0.8rem;
 
         &:hover,
         &:active {
-            background-color: black;
-            color: white;
             cursor: pointer;
         }
     }

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 import "./UserItem.css"
 
-import Avatar from "../../shared/components/Avatar"
-import Card from "../../shared/components/Card"
+import Avatar from "../../components/atomic/Avatar"
+import Card from "../../components/atomic/Card"
 
 export default function UserItem({ id, image, name, placeCount }) {
    // console.log(id, image, name, placeCount)
@@ -18,9 +18,9 @@ export default function UserItem({ id, image, name, placeCount }) {
                </div>
                <div className="user-item__info">
                   <h2>{name}</h2>
-                  <h3>
+                  <p>
                      {placeCount} {placeCount === 1 ? "Place" : "Places"}
-                  </h3>
+                  </p>
                </div>
             </Link>
          </Card>

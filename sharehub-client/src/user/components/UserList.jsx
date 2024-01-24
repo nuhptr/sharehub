@@ -3,7 +3,7 @@ import React from "react"
 import "./UserList.css"
 
 import UserItem from "./UserItem"
-import Card from "../../shared/components/Card"
+import Card from "../../components/atomic/Card"
 
 export default function UserList({ items }) {
    if (items.length === 0) {

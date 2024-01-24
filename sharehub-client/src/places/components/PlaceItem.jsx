@@ -2,7 +2,8 @@ import React from "react"
 
 import "./PlaceItem.css"
 
-import Card from "../../shared/components/Card"
+import Card from "../../components/atomic/Card"
+import Button from "../../components/atomic/Button"
 
 export default function PlaceItem({ id, image, title, description, address, creatorId, cordinates }) {
    return (
@@ -17,9 +18,9 @@ export default function PlaceItem({ id, image, title, description, address, crea
                <p>{description}</p>
             </div>
             <div className="place-items__actions">
-               <button>View On Map</button>
-               <button>Edit</button>
-               <button>Delete</button>
+               <Button inverse>View On Map</Button>
+               <Button to={`/places/${id}`}>Edit</Button>
+               <Button danger>Delete</Button>
             </div>
          </Card>
       </li>
