@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 import "./UserItem.css"
 
-import Avatar from "../../components/atomic/Avatar"
-import Card from "../../components/atomic/Card"
+import Avatar from "../atomic/Avatar"
+import Card from "../atomic/Card"
 
 export default function UserItem({ id, image, name, placeCount }) {
    // console.log(id, image, name, placeCount)

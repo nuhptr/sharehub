@@ -2,9 +2,10 @@ import React, { useState } from "react"
 
 import "./PlaceItem.css"
 
-import Card from "../../components/atomic/Card"
-import Button from "../../components/atomic/Button"
-import Modal from "../../components/atomic/Modal"
+import Card from "../atomic/Card"
+import Button from "../atomic/Button"
+import Modal from "../atomic/Modal"
+import Maps from "../atomic/Maps"
 
 export default function PlaceItem({ id, image, title, description, address, creatorId, cordinates }) {
    const [showMap, setShowMap] = useState(false)
@@ -27,7 +28,7 @@ export default function PlaceItem({ id, image, title, description, address, crea
                </Button>
             }>
             <div className="map-container">
-               <h2>The Map</h2>
+               <Maps center={cordinates} zoom={16} />
             </div>
          </Modal>
 

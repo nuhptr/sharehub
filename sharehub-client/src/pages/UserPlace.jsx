@@ -2,7 +2,7 @@ import React from "react"
 // for getting the userId from the url
 import { useParams } from "react-router-dom"
 
-import PlaceList from "./components/PlaceList"
+import PlaceList from "../components/places/PlaceList"
 
 const DUMMY_PLACES = [
    {

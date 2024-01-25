@@ -2,7 +2,7 @@ import React from "react"
 
 import "./PlaceList.css"
 
-import Card from "../../components/atomic/Card"
+import Card from "../atomic/Card"
 import PlaceItem from "./PlaceItem"
 
 export default function PlaceList({ items }) {

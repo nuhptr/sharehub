@@ -1,10 +1,10 @@
 import React from "react"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 
-import Users from "./user/Users"
-import NewPlace from "./places/NewPlace"
+import Users from "./pages/Users"
+import NewPlace from "./pages/NewPlace"
 import MainNavigation from "./components/navigation/MainNavigation"
-import UserPlace from "./places/UserPlace"
+import UserPlace from "./pages/UserPlace"
 
 export default function App() {
    return (
