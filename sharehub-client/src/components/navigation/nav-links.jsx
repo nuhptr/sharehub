@@ -1,4 +1,7 @@
-.nav-links {
+import { NavLink } from "react-router-dom"
+import { styled } from "styled-components"
+
+const List = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
@@ -71,4 +74,25 @@
             outline: none;
         }
     }
+`
+
+export default function NavLinks() {
+    return (
+        <List>
+            <li>
+                <NavLink to={"/"} exact>
+                    All Users
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to={"/u1/places"}>My Places</NavLink>
+            </li>
+            <li>
+                <NavLink to={"/places/new"}>Add Places</NavLink>
+            </li>
+            <li>
+                <NavLink to={"/auth"}>Authenticate</NavLink>
+            </li>
+        </List>
+    )
 }

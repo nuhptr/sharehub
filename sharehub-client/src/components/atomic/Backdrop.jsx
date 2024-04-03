@@ -1,10 +1,19 @@
-import React from "react"
 import ReactDOM from "react-dom"
+import { styled } from "styled-components"
 
-import "./Backdrop.css"
+const Div = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+`
 
 export default function Backdrop({ onClick }) {
-   const content = <div className="backdrop" onClick={onClick}></div>
-   
-   return ReactDOM.createPortal(content, document.getElementById("backdrop-hook"))
+    return ReactDOM.createPortal(
+        <Div onClick={onClick}></Div>,
+        document.getElementById("backdrop-hook")
+    )
 }

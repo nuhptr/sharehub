@@ -1,19 +1,20 @@
-import React, { useRef, useEffect } from "react"
+import { useRef, useEffect } from "react"
+import { styled } from "styled-components"
 
-import "./Maps.css"
+const Div = styled.div`
+    width: 100%;
+    height: 100%;
+`
 
 export default function Maps({ className, style, center, zoom }) {
-   const mapRef = useRef()
+    const mapRef = useRef()
 
-   useEffect(() => {
-      //* add map to the DOM
-      const map = new window.google.maps.Map(mapRef.current, {
-         center: center,
-         zoom: zoom,
-      })
+    useEffect(() => {
+        //* add map to the DOM
+        const map = new window.google.maps.Map(mapRef.current, { center: center, zoom: zoom })
 
-      new window.google.maps.Marker({ position: center, map: map })
-   }, [center, zoom])
+        new window.google.maps.Marker({ position: center, map: map })
+    }, [center, zoom])
 
-   return <div ref={mapRef} className={`map ${className}`} style={style} id="map"></div>
+    return <Div id="map" ref={mapRef} className={className} style={style}></Div>
 }

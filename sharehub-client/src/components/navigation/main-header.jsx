@@ -1,8 +1,6 @@
-main {
-    margin-top: 6.5rem;
-}
+import { styled } from "styled-components"
 
-.main-header {
+const Header = styled.header`
     width: 100%;
     height: 4.5rem;
     display: flex;
@@ -17,4 +15,8 @@ main {
     @media (min-width: 768px) {
         justify-content: space-between;
     }
+`
+
+export default function MainHeader({ children }) {
+    return <Header>{children}</Header>
 }
