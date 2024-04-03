@@ -13,6 +13,27 @@ body {
     background: #4d4d4d;
 }
 
+/** Place Item */
+.place-item__content {
+    padding: 0;
+    background-color: white;
+}
+
+.place-item__modal-content {
+    padding: 0;
+}
+
+.place-item__modal-actions {
+    text-align: right;
+}
+/** */
+
+/** User */
+.user-item__content {
+    padding: 0;
+}
+/** */
+
 .slide-in-left-enter {
     transform: translateX(-100%);
 }
