@@ -4,7 +4,7 @@ import { styled } from "styled-components"
 import Users from "./pages/user/users"
 import NewPlace from "./pages/place/new-place"
 import MainNavigation from "./components/navigation/main-navigation"
-import UserPlace from "./pages/user-place/user-place"
+import UserPlace from "./pages/place/user-place"
 
 const StyledMain = styled.main`
     margin-top: 6.5rem;
