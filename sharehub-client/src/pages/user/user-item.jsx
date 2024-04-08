@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom"
 import { styled } from "styled-components"
 
-import Avatar from "../../components/atomic/avatar"
-import Card from "../../components/atomic/card"
+import { Avatar, Card } from "../../components/atomic"
 
 const ListUserItem = styled.li`
     margin: 1rem;

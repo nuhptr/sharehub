@@ -1,10 +1,7 @@
 import { useState } from "react"
 import { styled } from "styled-components"
 
-import Card from "../../components/atomic/card"
-import Button from "../../components/atomic/button"
-import Modal from "../../components/atomic/modal"
-import Maps from "../../components/atomic/maps"
+import { Card, Button, Modal, Maps } from "../../components/atomic"
 
 const DivMap = styled.div`
     height: 20rem;

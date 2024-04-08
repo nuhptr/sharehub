@@ -5,7 +5,7 @@ import { styled } from "styled-components"
 import MainHeader from "./main-header"
 import NavLinks from "./nav-links"
 import SideDrawer from "./side-drawer"
-import Backdrop from "../atomic/backdrop"
+import { Backdrop } from "../atomic"
 
 const Button = styled.button`
     width: 3rem;

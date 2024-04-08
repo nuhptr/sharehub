@@ -1,7 +1,7 @@
 import { styled } from "styled-components"
 
+import { Card } from "../../components/atomic"
 import UserItem from "./user-item"
-import Card from "../../components/atomic/card"
 
 const Ul = styled.ul`
     width: 90%;

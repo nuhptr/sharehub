@@ -1,6 +1,6 @@
 import { styled, css } from "styled-components"
 
-import Card from "../../components/atomic/card"
+import { Card } from "../../components/atomic"
 import PlaceItem from "./place-item"
 
 const sharedStyles = css`
