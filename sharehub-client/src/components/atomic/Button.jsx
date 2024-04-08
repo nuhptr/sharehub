@@ -102,6 +102,7 @@ export default function Button({
     children,
     onClick,
     isDisabled,
+    type,
 }) {
     if (href) {
         return (
@@ -135,7 +136,8 @@ export default function Button({
             $fontSize={size}
             $type={(inverse && "inverse") || (danger && "danger") || "default"}
             onClick={onClick}
-            disabled={isDisabled}>
+            disabled={isDisabled}
+            type={type}>
             {children}
         </ButtonStyled>
     )
